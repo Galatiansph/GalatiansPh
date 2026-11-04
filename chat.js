@@ -28,6 +28,10 @@
       text: "Hi! I'm the Galatians virtual assistant. I can tell you about our Life, Non-Life and HMO coverage, and help you request a quote. What would you like to know?",
       links: []
     },
+    group: {
+      text: "Group or company HMO plans require a minimum of 5 enrollees. If you have fewer than 5 people to cover, we can help with individual or family plans instead.",
+      links: ['hmo', 'quote']
+    },
     hmo: {
       text: "We offer HMO plans for companies, and also for individuals and families. Plans usually cover inpatient and outpatient care, emergency care and annual check-ups. Exact benefits, limits and exclusions depend on the plan.",
       links: ['hmo', 'quote']
@@ -86,6 +90,7 @@
     ['contact', /\b(contact|email|e-mail|phone|call|number|talk|speak|human|person|agent|someone|representative|viber|whatsapp|messenger)/],
     ['buy', /\b(buy|purchase|order|icare|i-care|online plan|prepaid|add to cart)/],
     ['quote', /\b(quote|quotation|price|prices|cost|how much|premium|rate|rates|afford|cheap|apply|sign up|enroll)/],
+    ['group', /\b(group|company|companies|corporate|employees?|staff|team|minimum|how many (people|employees|members|enrollees))/],
     ['hmo', /\b(hmo|health|medical|hospital|doctor|dental|check-?up|maxicare|inpatient|outpatient|emergency|senior|family plan)/],
     ['life', /\b(life|term|whole life|critical|illness|estate|key-?person|death|funeral|legacy|retire|education|vul|investment)/],
     ['nonlife', /\b(non-?life|motor|car|vehicle|fleet|fire|property|house|home|building|marine|cargo|liability|travel|accident|business insurance|commercial|ctpl)/],

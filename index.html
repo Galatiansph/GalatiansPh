@@ -230,7 +230,7 @@
           </div>
         </div>
         <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
-          <p class="text-slate-600 text-xs leading-relaxed">Health plans for companies, individuals and families: inpatient and outpatient care, check-ups, and emergency coverage.</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Health plans for companies, individuals and families: inpatient and outpatient care, check-ups, and emergency coverage. <strong class="text-brand-orange">Group plans start at 5 enrollees.</strong></p>
           <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
             <span class="text-[11px] font-bold text-slate-400">Corporate &amp; Individual</span>
             <a href="hmo.html" class="text-xs font-bold text-brand-teal flex items-center gap-1">Learn more <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
@@ -488,15 +488,7 @@
     }
   });
 </script>
-<script>
-  /* iCare sales tagging: every iCare shop link on this page carries the Galatians affiliate code. */
-  var ICARE_TRACKING = 'affiliate=VUg1SFJoVmlOdGNremdpMnNvTWNpaVNpZDZUU1dkWldQYjkrcjV2VGxHM1hBWWRFOGdydUVGcEJkeVQ3RXlKWQ';
-  if (ICARE_TRACKING) {
-    document.querySelectorAll('a[href^="https://shop.icare.com.ph"]').forEach(function (a) {
-      a.href += (a.href.indexOf('?') === -1 ? '?' : '&') + ICARE_TRACKING;
-    });
-  }
-</script>
+<script src="agent.js" defer></script>
 <script src="chat.js" defer></script>
 </body>
 </html>
