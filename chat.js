@@ -15,6 +15,7 @@
     nonlife: { label: 'See Non-Life insurance', href: 'non-life.html' },
     micro: { label: 'See Micro-Insurance', href: 'micro-insurance.html' },
     quote: { label: 'Request a free quote', href: '#quote-section' },
+    buy: { label: 'Buy an iCare plan', href: 'hmo.html#icare-section' },
     email: { label: 'Email us', href: 'mailto:' + EMAIL }
   };
 
@@ -42,6 +43,10 @@
     micro: {
       text: "Embedded Micro-Insurance is simple, low-cost protection offered inside an app, platform or customer program, such as e-commerce, fintech or membership groups.",
       links: ['micro', 'quote']
+    },
+    buy: {
+      text: "You can buy iCare health plans online. Choose a plan on our HMO page and complete your purchase on the iCare online shop.",
+      links: ['buy', 'quote']
     },
     quote: {
       text: "Prices depend on the plan, the people or assets covered, and your needs, so we prepare a quote for you. It is free. Fill in the short form and we will get back to you.",
@@ -79,6 +84,7 @@
     ['claim', /\b(claim|claims|file a claim|reimburse)/],
     ['license', /\b(licen[sc]e|accredit|ic number|insurance commission|legit|registered)/],
     ['contact', /\b(contact|email|e-mail|phone|call|number|talk|speak|human|person|agent|someone|representative|viber|whatsapp|messenger)/],
+    ['buy', /\b(buy|purchase|order|icare|i-care|online plan|prepaid|add to cart)/],
     ['quote', /\b(quote|quotation|price|prices|cost|how much|premium|rate|rates|afford|cheap|apply|sign up|enroll)/],
     ['hmo', /\b(hmo|health|medical|hospital|doctor|dental|check-?up|maxicare|inpatient|outpatient|emergency|senior|family plan)/],
     ['life', /\b(life|term|whole life|critical|illness|estate|key-?person|death|funeral|legacy|retire|education|vul|investment)/],
@@ -162,7 +168,7 @@
 
   var CHIPS = [
     ['HMO plans', 'hmo'], ['Life insurance', 'life'], ['Non-Life', 'nonlife'],
-    ['Micro-Insurance', 'micro'], ['Get a quote', 'quote'], ['Talk to a person', 'contact']
+    ['Micro-Insurance', 'micro'], ['Buy a plan online', 'buy'], ['Get a quote', 'quote'], ['Talk to a person', 'contact']
   ];
   CHIPS.forEach(function (c) {
     var b = el('button', { type: 'button' }, c[0]);
