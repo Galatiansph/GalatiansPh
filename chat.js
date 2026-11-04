@@ -15,7 +15,7 @@
     nonlife: { label: 'See Non-Life insurance', href: 'non-life.html' },
     micro: { label: 'See Micro-Insurance', href: 'micro-insurance.html' },
     quote: { label: 'Request a free quote', href: '#quote-section' },
-    buy: { label: 'Buy an iCare plan', href: 'hmo.html#icare-section' },
+    buy: { label: 'Buy now', href: 'hmo.html#icare-section' },
     email: { label: 'Email us', href: 'mailto:' + EMAIL }
   };
 
@@ -45,7 +45,7 @@
       links: ['micro', 'quote']
     },
     buy: {
-      text: "You can buy iCare health plans online. Choose a plan on our HMO page and complete your purchase on the iCare online shop.",
+      text: "You can buy iCare prepaid health plans online. Choose a plan on our HMO page, tap Buy Now, and finish your purchase on the iCare online shop.",
       links: ['buy', 'quote']
     },
     quote: {
@@ -168,7 +168,7 @@
 
   var CHIPS = [
     ['HMO plans', 'hmo'], ['Life insurance', 'life'], ['Non-Life', 'nonlife'],
-    ['Micro-Insurance', 'micro'], ['Buy a plan online', 'buy'], ['Get a quote', 'quote'], ['Talk to a person', 'contact']
+    ['Micro-Insurance', 'micro'], ['Buy now', 'buy'], ['Get a quote', 'quote'], ['Talk to a person', 'contact']
   ];
   CHIPS.forEach(function (c) {
     var b = el('button', { type: 'button' }, c[0]);
