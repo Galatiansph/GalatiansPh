@@ -11,6 +11,8 @@
 
   var LINKS = {
     hmo: { label: 'See HMO plans', href: 'hmo.html' },
+    groupPage: { label: 'See group plans', href: 'group-plans.html' },
+    compare: { label: 'Compare individual plans', href: 'compare-plans.html' },
     life: { label: 'See Life insurance', href: 'life.html' },
     nonlife: { label: 'See Non-Life insurance', href: 'non-life.html' },
     micro: { label: 'See Micro-Insurance', href: 'micro-insurance.html' },
@@ -29,8 +31,8 @@
       links: []
     },
     group: {
-      text: "Group or company HMO plans require a minimum of 5 enrollees. If you have fewer than 5 people to cover, we can help with individual or family plans instead.",
-      links: ['hmo', 'quote']
+      text: "Group or company HMO plans require a minimum of 5 enrollees. For small and medium businesses we offer iCare Biz (5 to 99 employees) and PhilCare SME Luxe (5 to 200 employees). If you have fewer than 5 people to cover, we can help with individual or family plans instead.",
+      links: ['groupPage', 'compare', 'quote']
     },
     hmo: {
       text: "We offer HMO plans for companies, and also for individuals and families. Plans usually cover inpatient and outpatient care, emergency care and annual check-ups. Exact benefits, limits and exclusions depend on the plan.",
