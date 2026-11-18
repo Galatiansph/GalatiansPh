@@ -98,6 +98,8 @@
     <nav class="flex gap-2 overflow-x-auto pb-3 -mx-1 px-1 text-[11px] font-bold">
       <a href="index.html" class="shrink-0 px-3 py-1.5 rounded-full bg-brand-navy text-white">Home</a>
       <a href="hmo.html" class="shrink-0 px-3 py-1.5 rounded-full bg-slate-100 text-brand-navy">HMO</a>
+      <a href="compare-plans.html" class="shrink-0 px-3 py-1.5 rounded-full bg-brand-amber text-brand-navy">Individual Plans</a>
+      <a href="group-plans.html" class="shrink-0 px-3 py-1.5 rounded-full bg-brand-amber text-brand-navy">Group Plans</a>
       <a href="life.html" class="shrink-0 px-3 py-1.5 rounded-full bg-slate-100 text-brand-navy">Life</a>
       <a href="non-life.html" class="shrink-0 px-3 py-1.5 rounded-full bg-slate-100 text-brand-navy">Non-Life</a>
       <a href="micro-insurance.html" class="shrink-0 px-3 py-1.5 rounded-full bg-slate-100 text-brand-navy">Micro-Insurance</a>
@@ -177,6 +179,28 @@
   </section>
 
   <!-- Buy Now: prepaid health plans -->
+  <!-- HMO highlight -->
+  <section id="hmo-plans" class="rounded-3xl shield-gradient-bg text-white p-6 sm:p-8 shadow-xl">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 text-brand-amber text-[11px] font-extrabold uppercase tracking-wider border border-white/20"><i class="fa-solid fa-user-doctor"></i> HMO health plans</span>
+    <h2 class="font-heading text-2xl sm:text-3xl font-extrabold leading-tight mt-3">Find the right health plan</h2>
+    <p class="text-slate-100 text-sm leading-relaxed mt-1 max-w-2xl">Choose the kind of cover you need. Compare plans, see premiums and ask us for a quote.</p>
+    <div class="grid sm:grid-cols-2 gap-4 mt-4">
+      <a href="compare-plans.html" class="group block rounded-2xl bg-white text-brand-navy p-5 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition">
+        <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-brand-teal text-white flex items-center justify-center text-lg"><i class="fa-solid fa-user-group"></i></div>
+          <div><p class="text-[11px] font-extrabold uppercase tracking-wider text-brand-teal">For you and your family</p><h3 class="font-heading font-extrabold text-lg leading-tight">Individual &amp; Family Plans</h3></div></div>
+        <p class="text-xs text-slate-600 leading-relaxed mt-3">Compare iCare, Pacific Cross and PhilCare side by side and see the yearly premium for your age.</p>
+        <span class="mt-3 inline-flex items-center gap-2 text-xs font-extrabold text-brand-teal">Compare plans and premiums <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i></span>
+      </a>
+      <a href="group-plans.html" class="group block rounded-2xl bg-white text-brand-navy p-5 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition">
+        <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-brand-orange text-white flex items-center justify-center text-lg"><i class="fa-solid fa-people-group"></i></div>
+          <div><p class="text-[11px] font-extrabold uppercase tracking-wider text-brand-orange">For your business</p><h3 class="font-heading font-extrabold text-lg leading-tight">Group &amp; SME Plans</h3></div></div>
+        <p class="text-xs text-slate-600 leading-relaxed mt-3">iCare Biz (5 to 99 employees) and PhilCare SME Luxe (5 to 200). <strong>Minimum of 5 enrollees.</strong></p>
+        <span class="mt-3 inline-flex items-center gap-2 text-xs font-extrabold text-brand-orange">See group plans and rates <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i></span>
+      </a>
+    </div>
+    <p class="text-xs text-slate-100 mt-4">Prefer to pay online? <a href="#buy-now" class="font-extrabold text-brand-amber underline">Buy iCare prepaid plans now</a> · <a href="hmo.html" class="font-bold underline">All HMO information</a></p>
+  </section>
+
   <section id="buy-now" class="rounded-3xl overflow-hidden shadow-xl border border-brand-navy bg-gradient-to-br from-brand-navy to-brand-teal text-white p-6 sm:p-8">
     <div class="flex items-start justify-between gap-4 mb-5">
       <div>
@@ -430,7 +454,7 @@
       <span class="font-heading font-extrabold text-brand-navy tracking-tight">GALATIANS INSURANCE SERVICES</span>
     </div>
     <p class="flex flex-wrap justify-center gap-x-4 gap-y-1 font-semibold">
-      <a href="hmo.html" class="hover:text-brand-navy">HMO</a><a href="life.html" class="hover:text-brand-navy">Life</a><a href="non-life.html" class="hover:text-brand-navy">Non-Life</a><a href="micro-insurance.html" class="hover:text-brand-navy">Micro-Insurance</a>
+      <a href="hmo.html" class="hover:text-brand-navy">HMO</a><a href="compare-plans.html" class="hover:text-brand-navy">Individual Plans</a><a href="group-plans.html" class="hover:text-brand-navy">Group Plans</a><a href="life.html" class="hover:text-brand-navy">Life</a><a href="non-life.html" class="hover:text-brand-navy">Non-Life</a><a href="micro-insurance.html" class="hover:text-brand-navy">Micro-Insurance</a>
     </p>
     <p>Official Inbox: <a href="mailto:connect@galatians-insurance-services.com" class="text-brand-navy font-bold underline">connect@galatians-insurance-services.com</a></p>
     <p>© <span id="current-year"></span> Galatians Insurance Services. All rights reserved.</p>
