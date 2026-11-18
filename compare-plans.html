@@ -113,7 +113,7 @@
       <h2 class="font-heading font-extrabold text-lg text-brand-navy">PhilCare Individual &amp; Family</h2>
       <p class="text-[11px] font-bold text-brand-green uppercase tracking-wider">HMO by Philhealthcare, Inc.</p>
       <p class="text-slate-600 text-xs leading-relaxed mt-2 flex-1">Three levels: Health360 (clinic-based), HealthPro (preferred hospitals and 600+ direct-access clinics) and HealthLuxe (direct access with travel assist and lifestyle services). Ages 15 days to 60.</p>
-      <p class="mt-3 text-xs font-bold text-brand-navy">Best for: people who want a large clinic and hospital network. Ask us for a quote.</p>
+      <p class="mt-3 text-xs font-bold text-brand-navy">Best for: people who want a large clinic and hospital network. See premiums by age below.</p>
     </article>
   </section>
 
@@ -263,11 +263,19 @@
           <th class="p-2">Plan A USD 500K</th><th class="p-2">Plan B USD 1M</th><th class="p-2">Plan C USD 2M</th></tr></thead>
           <tbody><tr id="row-br" class="font-bold text-brand-navy"></tr></tbody></table></div>
       </div>
+      <div>
+        <h3 class="text-sm font-extrabold text-brand-green mb-2">PhilCare Health360, HealthPro and HealthLuxe <span class="text-slate-500 font-semibold">(pesos, annual, ages 15 days to 60)</span></h3>
+        <div class="overflow-x-auto"><table class="w-full text-xs text-center min-w-[640px]"><thead>
+          <tr class="bg-green-50 text-brand-navy"><th class="p-2" colspan="4">Health360</th><th class="p-2" colspan="2">HealthPro</th><th class="p-2" colspan="2">HealthLuxe</th></tr>
+          <tr class="bg-green-50 text-brand-navy"><th class="p-2">Ward ₱100K</th><th class="p-2">Semi-private ₱150K</th><th class="p-2">Private ₱300K</th><th class="p-2">Private ₱500K</th><th class="p-2">Semi-private ₱150K</th><th class="p-2">Private ₱300K</th><th class="p-2">Semi-private ₱150K</th><th class="p-2">Private ₱300K</th></tr></thead>
+          <tbody><tr id="row-pc" class="font-bold text-brand-navy"></tr></tbody></table></div>
+        <p id="pc-note" class="text-[11px] text-slate-500 mt-1"></p>
+      </div>
     </div>
 
     <div class="mt-5 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-[11px] text-slate-700 leading-relaxed space-y-1.5">
       <p><strong>Read this before comparing prices.</strong> The plans are not like for like. Persona's limit applies to each illness or injury and is much lower, but it includes outpatient care and a life benefit. Select and Blue Royale have far higher hospital limits, and outpatient cover is optional or limited.</p>
-      <p><strong>PhilCare plans:</strong> rates are not shown on this page. <a href="#quote-section" class="font-bold text-brand-teal underline">Ask us for a PhilCare quote</a> for your age and plan level.</p>
+      <p><strong>PhilCare plans:</strong> rates shown are annual, per person. Semi-annual and quarterly payments are also available, so ask us for those amounts. Members who are not PhilHealth members pay an additional ₱4,032 (VAT included), which must be declared at enrollment. PhilCare room and board limits for Health360: ward ₱1,100 a day, semi-private ₱1,200 and private ₱1,600.</p>
       <p>Premiums are as listed in the insurers' materials dated October to November 2025 and may have changed. They can also change after medical evaluation. Select and Blue Royale premiums are before any discounts, and a documentary stamp tax is applied when a discount is used. Select optional extras per person per year: outpatient (Standard ₱5,600 for ages 21 to 40, higher for older ages) and dental (₱3,808 adult, ₱2,770 child). Blue Royale dental for Plans A and B is USD 634 (ages 4 to 100).</p>
     </div>
   </section>
@@ -357,6 +365,7 @@
   };
   var SEL_PLUS = [[0,3,[11789,14680,21428,22681,24143]],[4,10,[11316,14086,20550,21750,23151]],[11,20,[10844,13492,19673,20820,22160]],[21,25,[11416,18182,30720,32530,34643]],[26,30,[12446,19750,33716,35706,38028]],[31,35,[13133,20535,35391,37483,39923]],[36,40,[14277,22102,38127,40383,43014]],[41,45,[16566,25895,43837,46434,49464]],[46,50,[20000,29129,52427,55540,59172]],[51,55,[22289,32436,59371,62901,67019]],[56,60,[29156,42508,76843,81421,86762]],[61,65,[36309,52999,95918,101641,108317]],[66,66,[54192,79228,143606,152189,162204]],[67,67,[59370,86823,157416,166828,177810]],[68,68,[64635,94545,171455,181710,193674]],[69,69,[69900,102266,185494,196591,209537]],[70,70,[75164,109988,199533,211473,225402]],[71,71,[82604,120899,219371,232502,247819]],[72,72,[90043,131810,239209,253530,270236]],[73,73,[97482,142720,259047,274558,292653]],[74,74,[104921,153631,278885,295586,315070]],[75,75,[112361,164542,298723,316615,337487]],[76,80,[119228,174614,317035,336025,358180]],[81,85,[130673,191400,347555,368377,392667]],[86,100,[152189,222958,404933,429196,457504]]];
   var SEL_STD = [[0,3,[11253,13395,17251]],[4,10,[10803,12855,16549]],[11,20,[10353,12315,15847]],[21,25,[10898,15040,24684]],[26,30,[11879,16413,27081]],[31,35,[12533,17329,28422]],[36,40,[13623,18855,30611]],[41,45,[15803,21907,35178]],[46,50,[19073,26485,42050]],[51,55,[21253,29537,46933]],[56,60,[27793,38693,61583]],[61,65,[34606,48231,76843]],[66,66,[51637,72074,114993]],[67,67,[56569,78979,126041]],[68,68,[61583,85999,137273]],[69,69,[66597,93019,148504]],[70,70,[71611,100038,159735]],[71,71,[78696,109957,175606]],[72,72,[85781,119876,191476]],[73,73,[92866,129795,207347]],[74,74,[99951,139714,223217]],[75,75,[107036,149633,239087]],[76,80,[113576,158789,253737]],[81,85,[124476,174049,278153]],[86,100,[144968,202738,324055]]];
+  var PHILCARE = [[0,5,[16150,18116,31455,33902,28577,49420,33544,58206]],[6,10,[11329,13849,21700,24147,22260,34675,26074,40762]],[11,17,[8002,10030,17976,20423,16627,29047,19410,34104]],[18,30,[8002,10030,17976,20423,16627,29047,20070,34765]],[31,35,[10276,11995,21997,24438,19527,35118,23498,41944]],[36,40,[11021,12746,26841,29288,20630,42442,24802,50613]],[41,45,[13283,19085,35834,38276,30005,56039,35896,66696]],[46,50,[16531,24058,42913,45354,37358,66735,44593,79352]],[51,55,[22691,29434,49633,52074,45304,76894,53995,91370]],[56,60,[31847,42308,57943,60385,64333,89460,76507,106238]]];
   var BLUE = [[0,3,[1712,2055,2568]],[4,18,[1789,2176,3166]],[19,25,[1822,2936,3642]],[26,30,[2005,3681,4608]],[31,35,[2154,4036,4936]],[36,40,[2358,4425,5238]],[41,45,[2831,4767,5454]],[46,50,[3023,5106,5732]],[51,55,[3435,5344,5955]],[56,60,[3652,5836,6483]],[61,65,[3941,6757,7529]],[66,66,[4173,9329,10310]],[67,67,[4399,10039,11056]],[68,68,[4627,10668,11717]],[69,69,[4856,11308,12388]],[70,70,[5084,11957,13070]],[71,71,[5289,12910,14071]],[72,72,[5781,14118,15339]],[73,73,[6213,15178,16452]],[74,74,[6519,15934,17245]],[75,75,[6829,16690,18040]],[76,80,[8522,20792,22347]],[81,85,[11635,28016,29932]],[86,90,[14629,35457,37745]],[91,95,[20601,49542,52534]],[96,100,[28755,61543,65136]]];
 
   function find(table, age) {
@@ -392,6 +401,9 @@
     fill('row-plus', find(SEL_PLUS, age), '₱', 5);
     fill('row-std', find(SEL_STD, age), '₱', 3);
     fill('row-br', find(BLUE, age), 'USD ', 3);
+    var pc = find(PHILCARE, age);
+    fill('row-pc', pc, '₱', 8);
+    document.getElementById('pc-note').textContent = pc ? (age >= 11 && age <= 30 ? 'For ages 11 to 30, Health360 and HealthPro share one rate.' : '') : 'PhilCare individual plans are available from 15 days to 60 years old.';
   }
   ageEl.addEventListener('input', calc);
   accessEl.addEventListener('change', calc);
