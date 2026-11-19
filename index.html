@@ -72,6 +72,21 @@
     -webkit-text-fill-color: transparent; color: transparent;
   }
 </style>
+<style id="desktop-fit">
+/* Desktop and large screens: use more of the width and larger text */
+@media (min-width:1024px){
+  html{font-size:17px}
+  .max-w-4xl{max-width:min(78rem,94vw)!important}
+  .text-xs{font-size:.86rem!important;line-height:1.35rem!important}
+  .text-\[11px\]{font-size:.8rem!important}
+  .text-\[10px\]{font-size:.74rem!important}
+  .text-sm{font-size:.98rem!important}
+}
+@media (min-width:1440px){
+  html{font-size:18px}
+  .max-w-4xl{max-width:min(84rem,92vw)!important}
+}
+</style>
 </head>
 
 <body class="overflow-x-hidden bg-slate-100 text-slate-800 font-sans antialiased selection:bg-brand-crimson selection:text-white pb-12">
