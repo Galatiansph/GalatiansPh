@@ -124,12 +124,34 @@
 </header>
 
 <main class="max-w-4xl mx-auto px-4 sm:px-6 pt-6 space-y-6">
+  <!-- Brand video (plays first) -->
+  <section id="video" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 app-card-shadow">
+    <div class="grid md:grid-cols-2 gap-6 items-center">
+      <div class="space-y-3">
+        <span class="text-[11px] font-extrabold uppercase tracking-widest shield-gradient-text">Welcome to Galatians</span>
+        <h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brand-navy leading-tight">Protecting your family, assets, business and future</h1>
+        <p class="text-sm text-slate-600 leading-relaxed">Life, Non-Life and HMO health plans from Galatians Insurance Services. Watch how we stand beside you at every stage of life.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#hmo-plans" class="px-5 py-2.5 rounded-xl bg-brand-amber text-brand-navy font-extrabold text-xs uppercase tracking-wider hover:brightness-110 transition shadow">See health plans</a>
+          <a href="#quote-section" class="px-5 py-2.5 rounded-xl bg-brand-navy text-white font-bold text-xs uppercase tracking-wider hover:bg-brand-darkBlue transition-colors">Get a free quote</a>
+        </div>
+      </div>
+      <div class="mx-auto w-full max-w-[300px] relative">
+        <video id="hero-video" class="w-full rounded-2xl shadow-lg bg-black" autoplay muted playsinline controls preload="auto" poster="galatians-video-poster.jpg" aria-label="Galatians Insurance Services brand video">
+          <source src="galatians-video.mp4" type="video/mp4">
+          Your browser cannot play this video.
+        </video>
+        <button type="button" id="unmute-btn" class="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-black/70 text-white text-[11px] font-bold flex items-center gap-1.5"><i class="fa-solid fa-volume-xmark"></i> Tap for sound</button>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Welcome -->
   <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 app-card-shadow">
     <div class="flex items-center justify-between mb-6">
       <div>
-        <h1 class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-navy">Hello & Welcome 👋</h1>
+        <h2 class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-navy">Hello & Welcome 👋</h2>
         <p class="text-slate-500 text-xs sm:text-sm mt-1 font-medium">Welcome to Galatians Insurance Services. Select an option below to get started.</p>
       </div>
       <div class="hidden sm:flex p-2 rounded-2xl bg-white border border-slate-200 shadow-sm items-center justify-center">
@@ -526,6 +548,15 @@
       btn.classList.remove('opacity-60');
     }
   });
+</script>
+<script>
+  (function () {
+    var v = document.getElementById('hero-video'), b = document.getElementById('unmute-btn');
+    if (!v || !b) return;
+    var p = v.play && v.play(); if (p && p.catch) p.catch(function () { /* autoplay blocked: viewer can tap play */ });
+    b.addEventListener('click', function () { v.muted = false; v.volume = 1; if (v.paused) v.play(); b.style.display = 'none'; });
+    v.addEventListener('volumechange', function () { if (!v.muted) b.style.display = 'none'; });
+  })();
 </script>
 <script src="agent.js" defer></script>
 <script src="chat.js" defer></script>
